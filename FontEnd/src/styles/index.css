@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Henny+Penny:regular);
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+@layer base{
+    .searchBar{
+        @apply transition-all duration-200
+    }
+    .transitionTheme{
+        @apply transition-all duration-700 delay-100 ease-in-out
+    }
+    .textFont{
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+.styleText{
+    font-family: 'Henny Penny', cursive;
+}
+
+.cart-transition-theme{
+    @apply transition-all ease-in-out duration-500 delay-200
+  }
+
+.removeScrollBar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .removeScrollBar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  html{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  body{
+    max-width:100%;
+  }
+
+
+  .hide-scrollbar {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    &::-webkit-scrollbar {
+      width: 0 !important; /* For Chrome, Safari, and Opera */
+    }
+  }
+  
+    
+}

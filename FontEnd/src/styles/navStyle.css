@@ -1,0 +1,30 @@
+
+nav a.active{
+    color: #dc2626
+}
+
+nav a::after{
+    content:"";
+    width:0%;
+    height: 2px;
+    background-color: #dc2626;
+    display: block;
+    margin:auto;
+    transition: all 0.2s ease-in-out;
+
+}
+nav a:hover::after{
+    width:100%;
+}
+
+
+
+.products:hover ul{
+    display:flex;
+}
+
+
+
+.searchBar{
+ 
+}
